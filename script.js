@@ -8,7 +8,7 @@ const supabaseClient = window.supabase.createClient(
     SUPABASE_KEY
 );
 
-console.log("Supabase connected:", supabaseClient);
+console.log("PlaylistKita V2 — Supabase connected");
 
 let songs = JSON.parse(localStorage.getItem("mySongs")) || [];
 let playlists = JSON.parse(localStorage.getItem("myPlaylists")) || [];
