@@ -1,14 +1,6 @@
 const audio = document.getElementById("audioPlayer");
-const SUPABASE_URL = "https://ibsobqdicrjwpqwinsjk.supabase.co";
 
-const SUPABASE_KEY = "sb_publishable_wnizDCQ62Ec8KOrzswxEYA_RD2bT2H_";
-
-const supabaseClient = window.supabase.createClient(
-    SUPABASE_URL,
-    SUPABASE_KEY
-);
-
-console.log("PlaylistKita V2 — Supabase connected");
+console.log("PlaylistKita V2 loaded");
 
 let songs = JSON.parse(localStorage.getItem("mySongs")) || [];
 let playlists = JSON.parse(localStorage.getItem("myPlaylists")) || [];
